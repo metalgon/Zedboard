@@ -1,0 +1,17 @@
+#include "clock.h"
+#include "uip_timer.h"
+
+volatile u32 GlobGigeTimeTick = 0;
+
+
+
+void timer_set(struct timer *t, clock_time_t interval)
+{
+  t->interval = interval;
+  t->start = GlobGigeTimeTick;
+}
+
+void timer_reset(struct timer *t)
+{
+  t->start += t->interval;
+}

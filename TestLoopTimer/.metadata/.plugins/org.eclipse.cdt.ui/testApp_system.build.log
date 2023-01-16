@@ -1,0 +1,9 @@
+18:46:23 **** Incremental Build of configuration Debug for project testApp_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50155 E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/zed.xpfm standalone_ps7_cortexa9_0 E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp_system/Debug/system.bif
+sdcard_gen --xpfm E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/zed.xpfm --sys_config zed --bif E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp_system/Debug/system.bif --no_bitstream --elf E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf,ps7_cortexa9_0
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+18:46:26 Build Finished (took 3s.284ms)
+

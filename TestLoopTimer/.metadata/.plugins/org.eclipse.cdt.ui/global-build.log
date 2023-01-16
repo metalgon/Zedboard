@@ -1,0 +1,30 @@
+Nothing to build in platform 'zed'
+
+18:46:22 **** Incremental Build of configuration Debug for project testApp ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/sw/zed/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
+'Building target: testApp.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/sw/zed/standalone_ps7_cortexa9_0/bsplib/lib -o "testApp.elf"  ./src/echo.o ./src/main.o ./src/platform.o ./src/uip_timer.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: testApp.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size testApp.elf  |tee "testApp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  97443	   1996	6412352	6511791	 635caf	testApp.elf
+'Finished building: testApp.elf.size'
+' '
+18:46:23 **** Incremental Build of configuration Debug for project testApp_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50155 E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/zed.xpfm standalone_ps7_cortexa9_0 E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp_system/Debug/system.bif
+sdcard_gen --xpfm E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/zed.xpfm --sys_config zed --bif E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp_system/Debug/system.bif --no_bitstream --elf E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf,ps7_cortexa9_0
+Running C:/Xilinx/Vitis/2022.2/bin/bootgen  -image E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

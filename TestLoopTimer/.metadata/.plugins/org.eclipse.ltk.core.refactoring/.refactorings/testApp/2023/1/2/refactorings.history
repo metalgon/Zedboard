@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;testApp/src/platform_zynq.c&apos; to &apos;platform.c&apos;" description="Rename resource &apos;platform_zynq.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/platform_zynq.c" name="platform.c" stamp="1673315578318" updateReferences="true"/>
+</session>

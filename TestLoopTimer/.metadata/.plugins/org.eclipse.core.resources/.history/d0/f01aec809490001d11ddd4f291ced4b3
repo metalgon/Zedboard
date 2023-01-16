@@ -1,0 +1,11 @@
+#ifndef __TIMER_H__
+#define __TIMER_H__
+
+#include "clock.h"
+
+
+
+
+
+
+#endif /* __TIMER_H__ */

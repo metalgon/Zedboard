@@ -1,0 +1,2135 @@
+10:27:27 DEBUG : Logs will be stored at 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/IDE.log'.
+10:27:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\temp_xsdb_launch_script.tcl
+10:27:29 INFO  : Registering command handlers for Vitis TCF services
+10:27:30 INFO  : Platform repository initialization has completed.
+10:27:31 INFO  : XSCT server has started successfully.
+10:27:31 INFO  : Successfully done setting XSCT server connection channel  
+10:27:31 INFO  : plnx-install-location is set to ''
+10:27:31 INFO  : Successfully done query RDI_DATADIR 
+10:27:31 INFO  : Successfully done setting workspace for the tool. 
+10:29:09 INFO  : Result from executing command 'getProjects': zed
+10:29:09 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+10:29:10 WARN  : An unexpected exception occurred in the module 'platform project logging'
+10:29:11 INFO  : Platform 'zed' is added to custom repositories.
+10:29:17 INFO  : Platform 'zed' is added to custom repositories.
+10:36:19 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:36:19 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:36:19 WARN  : Failed to closehw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:36:19 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:36:19 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:36:19 ERROR : Failed to update application flags from BSP for 'testApp'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+10:36:35 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:36:35 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:36:35 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:36:35 ERROR : Failed to update application flags from BSP for 'testApp'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+10:36:36 ERROR : Failed to compute checksum of hardware specification file used by project 'testApp'
+10:36:36 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:36:36 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:36:36 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:36:36 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:36:36 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:36:36 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:37:00 INFO  : Result from executing command 'removePlatformRepo': 
+10:37:10 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:37:10 ERROR : Failed to get platform details for the project 'testApp'. Cannot sync application flags.
+10:38:26 INFO  : Result from executing command 'removePlatformRepo': 
+10:38:50 INFO  : Result from executing command 'getProjects': zed
+10:38:50 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+10:38:51 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:39:54 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:39:54 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:39:54 WARN  : Failed to closehw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:39:54 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:39:54 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:39:54 ERROR : Failed to update application flags from BSP for 'testApp'. Reason: null
+java.lang.NullPointerException: null
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214) ~[com.xilinx.sdx.sw_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:64) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160) ~[com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48) [com.xilinx.sdx.sdk.core_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.generateMakefiles(XilinxGnuMakefileGenerator.java:40) [com.xilinx.sdk.managedbuilder_1.0.0.202210132147.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1008) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459) [org.eclipse.cdt.managedbuilder.core_8.6.0.201802261533.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.11.0.v20200206-0817.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:405) [org.eclipse.core.resources_3.13.700.v20200209-1624.jar:?]
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180) [org.eclipse.ui.ide_3.17.0.v20200217-1511.jar:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.700.v20200106-1020.jar:?]
+10:39:55 ERROR : Failed to compute checksum of hardware specification file used by project 'testApp'
+10:39:55 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:39:55 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:39:55 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:39:55 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:39:55 INFO  : Result from executing command 'getProjects': RemoteSystemsTempFiles;testApp;testApp_system;zed
+10:39:55 ERROR : Failed to openhw "E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa"
+Reason: E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa is not available in the current workspace
+use 'getprojects' command to see list of available projects in current workspace
+10:40:26 INFO  : Result from executing command 'getProjects': zed
+10:40:26 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm;zed|E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/zed.xpfm
+10:40:27 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:40:27 INFO  : Updating application flags with new BSP settings...
+10:40:27 INFO  : Successfully updated application flags for project testApp.
+10:40:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:40:46 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+10:40:46 INFO  : 'jtag frequency' command is executed.
+10:40:46 INFO  : Context for 'APU' is selected.
+10:40:46 INFO  : System reset is completed.
+10:40:49 INFO  : 'after 3000' command is executed.
+10:40:49 INFO  : Context for 'APU' is selected.
+10:40:49 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+10:40:49 INFO  : 'configparams force-mem-access 1' command is executed.
+10:40:49 INFO  : Context for 'APU' is selected.
+10:40:49 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+10:40:50 INFO  : 'ps7_init' command is executed.
+10:40:50 INFO  : 'ps7_post_config' command is executed.
+10:40:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:50 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:40:50 INFO  : 'configparams force-mem-access 0' command is executed.
+10:40:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:40:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:40:50 INFO  : 'con' command is executed.
+10:40:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:40:50 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+10:41:04 INFO  : Result from executing command 'removePlatformRepo': 
+10:41:33 INFO  : Result from executing command 'getProjects': zed
+10:41:33 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+10:41:33 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:43:09 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:43:31 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:43:50 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:47:55 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:52:45 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+10:53:04 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:04:17 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:04:41 INFO  : Result from executing command 'removePlatformRepo': 
+11:40:41 INFO  : Result from executing command 'getProjects': zed
+11:40:41 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:40:42 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:40:52 INFO  : Disconnected from the channel tcfchan#11.
+11:40:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:40:53 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+11:40:53 INFO  : 'jtag frequency' command is executed.
+11:40:53 INFO  : Context for 'APU' is selected.
+11:40:53 INFO  : System reset is completed.
+11:40:56 INFO  : 'after 3000' command is executed.
+11:40:56 INFO  : Context for 'APU' is selected.
+11:40:56 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+11:40:56 INFO  : 'configparams force-mem-access 1' command is executed.
+11:40:56 INFO  : Context for 'APU' is selected.
+11:40:56 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+11:40:57 INFO  : 'ps7_init' command is executed.
+11:40:57 INFO  : 'ps7_post_config' command is executed.
+11:40:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:57 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:40:57 INFO  : 'configparams force-mem-access 0' command is executed.
+11:40:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:40:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:40:57 INFO  : 'con' command is executed.
+11:40:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:40:57 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+11:43:15 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:43:44 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:43:50 INFO  : Disconnected from the channel tcfchan#25.
+11:43:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:43:51 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+11:43:51 INFO  : 'jtag frequency' command is executed.
+11:43:52 INFO  : Context for 'APU' is selected.
+11:43:52 INFO  : System reset is completed.
+11:43:55 INFO  : 'after 3000' command is executed.
+11:43:55 INFO  : Context for 'APU' is selected.
+11:43:55 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+11:43:55 INFO  : 'configparams force-mem-access 1' command is executed.
+11:43:55 INFO  : Context for 'APU' is selected.
+11:43:55 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+11:43:55 INFO  : 'ps7_init' command is executed.
+11:43:55 INFO  : 'ps7_post_config' command is executed.
+11:43:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:55 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:55 INFO  : 'configparams force-mem-access 0' command is executed.
+11:43:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:43:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:56 INFO  : 'con' command is executed.
+11:43:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:43:56 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+11:44:25 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:44:30 INFO  : Disconnected from the channel tcfchan#28.
+11:44:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:44:32 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+11:44:32 INFO  : 'jtag frequency' command is executed.
+11:44:32 INFO  : Context for 'APU' is selected.
+11:44:32 INFO  : System reset is completed.
+11:44:35 INFO  : 'after 3000' command is executed.
+11:44:35 INFO  : Context for 'APU' is selected.
+11:44:35 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+11:44:35 INFO  : 'configparams force-mem-access 1' command is executed.
+11:44:35 INFO  : Context for 'APU' is selected.
+11:44:35 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+11:44:35 INFO  : 'ps7_init' command is executed.
+11:44:35 INFO  : 'ps7_post_config' command is executed.
+11:44:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:35 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:44:35 INFO  : 'configparams force-mem-access 0' command is executed.
+11:44:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:44:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:44:35 INFO  : 'con' command is executed.
+11:44:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:44:35 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+11:52:42 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:54:20 INFO  : Disconnected from the channel tcfchan#30.
+11:54:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:54:21 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+11:54:21 INFO  : 'jtag frequency' command is executed.
+11:54:21 INFO  : Context for 'APU' is selected.
+11:54:21 INFO  : System reset is completed.
+11:54:24 INFO  : 'after 3000' command is executed.
+11:54:24 INFO  : Context for 'APU' is selected.
+11:54:24 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+11:54:24 INFO  : 'configparams force-mem-access 1' command is executed.
+11:54:24 INFO  : Context for 'APU' is selected.
+11:54:24 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+11:54:24 INFO  : 'ps7_init' command is executed.
+11:54:24 INFO  : 'ps7_post_config' command is executed.
+11:54:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:25 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:54:25 INFO  : 'configparams force-mem-access 0' command is executed.
+11:54:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:54:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:54:25 INFO  : 'con' command is executed.
+11:54:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:54:25 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+11:56:43 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:56:57 INFO  : Disconnected from the channel tcfchan#32.
+11:56:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:56:58 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+11:56:58 INFO  : 'jtag frequency' command is executed.
+11:56:58 INFO  : Context for 'APU' is selected.
+11:56:58 INFO  : System reset is completed.
+11:57:01 INFO  : 'after 3000' command is executed.
+11:57:01 INFO  : Context for 'APU' is selected.
+11:57:01 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+11:57:01 INFO  : 'configparams force-mem-access 1' command is executed.
+11:57:01 INFO  : Context for 'APU' is selected.
+11:57:01 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+11:57:02 INFO  : 'ps7_init' command is executed.
+11:57:02 INFO  : 'ps7_post_config' command is executed.
+11:57:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:57:02 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:57:02 INFO  : 'configparams force-mem-access 0' command is executed.
+11:57:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:57:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:57:02 INFO  : 'con' command is executed.
+11:57:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:57:02 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+11:57:59 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:58:04 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:58:26 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+11:58:38 INFO  : Disconnected from the channel tcfchan#34.
+11:58:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:58:39 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+11:58:39 INFO  : 'jtag frequency' command is executed.
+11:58:39 INFO  : Context for 'APU' is selected.
+11:58:39 INFO  : System reset is completed.
+11:58:42 INFO  : 'after 3000' command is executed.
+11:58:42 INFO  : Context for 'APU' is selected.
+11:58:42 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+11:58:42 INFO  : 'configparams force-mem-access 1' command is executed.
+11:58:42 INFO  : Context for 'APU' is selected.
+11:58:42 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+11:58:42 INFO  : 'ps7_init' command is executed.
+11:58:42 INFO  : 'ps7_post_config' command is executed.
+11:58:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:58:42 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:58:42 INFO  : 'configparams force-mem-access 0' command is executed.
+11:58:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:58:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:58:43 INFO  : 'con' command is executed.
+11:58:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:58:43 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+11:59:18 INFO  : Disconnected from the channel tcfchan#38.
+11:59:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:59:19 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+11:59:19 INFO  : 'jtag frequency' command is executed.
+11:59:21 INFO  : Context for 'APU' is selected.
+11:59:22 INFO  : System reset is completed.
+11:59:25 INFO  : 'after 3000' command is executed.
+11:59:25 INFO  : Context for 'APU' is selected.
+11:59:25 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+11:59:25 INFO  : 'configparams force-mem-access 1' command is executed.
+11:59:25 INFO  : Context for 'APU' is selected.
+11:59:25 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+11:59:25 INFO  : 'ps7_init' command is executed.
+11:59:25 INFO  : 'ps7_post_config' command is executed.
+11:59:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:25 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:59:25 INFO  : 'configparams force-mem-access 0' command is executed.
+11:59:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:59:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:59:25 INFO  : 'con' command is executed.
+11:59:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:59:25 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+12:02:23 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:02:47 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:03:03 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:03:11 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:03:17 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:03:35 INFO  : Disconnected from the channel tcfchan#39.
+12:03:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:03:36 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+12:03:36 INFO  : 'jtag frequency' command is executed.
+12:03:36 INFO  : Context for 'APU' is selected.
+12:03:36 INFO  : System reset is completed.
+12:03:39 INFO  : 'after 3000' command is executed.
+12:03:39 INFO  : Context for 'APU' is selected.
+12:03:39 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+12:03:39 INFO  : 'configparams force-mem-access 1' command is executed.
+12:03:39 INFO  : Context for 'APU' is selected.
+12:03:39 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+12:03:39 INFO  : 'ps7_init' command is executed.
+12:03:39 INFO  : 'ps7_post_config' command is executed.
+12:03:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:03:40 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:03:40 INFO  : 'configparams force-mem-access 0' command is executed.
+12:03:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:03:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:03:40 INFO  : 'con' command is executed.
+12:03:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:03:40 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+12:03:58 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:04:11 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:04:32 INFO  : Disconnected from the channel tcfchan#44.
+12:04:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:04:33 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+12:04:33 INFO  : 'jtag frequency' command is executed.
+12:04:33 INFO  : Context for 'APU' is selected.
+12:04:33 INFO  : System reset is completed.
+12:04:36 INFO  : 'after 3000' command is executed.
+12:04:36 INFO  : Context for 'APU' is selected.
+12:04:36 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+12:04:36 INFO  : 'configparams force-mem-access 1' command is executed.
+12:04:36 INFO  : Context for 'APU' is selected.
+12:04:36 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+12:04:36 INFO  : 'ps7_init' command is executed.
+12:04:36 INFO  : 'ps7_post_config' command is executed.
+12:04:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:04:37 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:04:37 INFO  : 'configparams force-mem-access 0' command is executed.
+12:04:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:04:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:04:37 INFO  : 'con' command is executed.
+12:04:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:04:37 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+12:05:56 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:12:09 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:12:27 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:17:20 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:17:28 INFO  : Disconnected from the channel tcfchan#47.
+12:17:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:17:29 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+12:17:29 INFO  : 'jtag frequency' command is executed.
+12:17:29 INFO  : Context for 'APU' is selected.
+12:17:29 INFO  : System reset is completed.
+12:17:32 INFO  : 'after 3000' command is executed.
+12:17:32 INFO  : Context for 'APU' is selected.
+12:17:32 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+12:17:32 INFO  : 'configparams force-mem-access 1' command is executed.
+12:17:32 INFO  : Context for 'APU' is selected.
+12:17:32 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+12:17:33 INFO  : 'ps7_init' command is executed.
+12:17:33 INFO  : 'ps7_post_config' command is executed.
+12:17:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:17:33 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:17:33 INFO  : 'configparams force-mem-access 0' command is executed.
+12:17:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:17:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:17:33 INFO  : 'con' command is executed.
+12:17:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:17:33 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+12:18:28 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:20:02 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:21:18 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:21:24 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:21:26 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:21:31 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:21:37 INFO  : Disconnected from the channel tcfchan#51.
+12:21:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:21:45 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+12:21:45 INFO  : 'jtag frequency' command is executed.
+12:21:45 INFO  : Context for 'APU' is selected.
+12:21:45 INFO  : System reset is completed.
+12:21:48 INFO  : 'after 3000' command is executed.
+12:21:48 INFO  : Context for 'APU' is selected.
+12:21:48 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+12:21:48 INFO  : 'configparams force-mem-access 1' command is executed.
+12:21:48 INFO  : Context for 'APU' is selected.
+12:21:48 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+12:21:48 INFO  : 'ps7_init' command is executed.
+12:21:48 INFO  : 'ps7_post_config' command is executed.
+12:21:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:21:48 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:21:48 INFO  : 'configparams force-mem-access 0' command is executed.
+12:21:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:21:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:21:48 INFO  : 'con' command is executed.
+12:21:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:21:48 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+12:22:08 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:22:20 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+12:22:33 INFO  : Disconnected from the channel tcfchan#55.
+12:22:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:22:44 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+12:22:44 INFO  : 'jtag frequency' command is executed.
+12:22:44 INFO  : Context for 'APU' is selected.
+12:22:44 INFO  : System reset is completed.
+12:22:47 INFO  : 'after 3000' command is executed.
+12:22:47 INFO  : Context for 'APU' is selected.
+12:22:47 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+12:22:47 INFO  : 'configparams force-mem-access 1' command is executed.
+12:22:47 INFO  : Context for 'APU' is selected.
+12:22:47 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+12:22:48 INFO  : 'ps7_init' command is executed.
+12:22:48 INFO  : 'ps7_post_config' command is executed.
+12:22:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:22:48 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+12:22:48 INFO  : 'configparams force-mem-access 0' command is executed.
+12:22:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:22:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+12:22:48 INFO  : 'con' command is executed.
+12:22:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+12:22:48 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+13:50:19 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:50:41 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:50:59 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:51:42 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:54:51 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:55:01 INFO  : Disconnected from the channel tcfchan#58.
+13:55:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:55:02 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+13:55:02 INFO  : 'jtag frequency' command is executed.
+13:55:02 INFO  : Context for 'APU' is selected.
+13:55:02 INFO  : System reset is completed.
+13:55:05 INFO  : 'after 3000' command is executed.
+13:55:05 INFO  : Context for 'APU' is selected.
+13:55:05 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+13:55:05 INFO  : 'configparams force-mem-access 1' command is executed.
+13:55:05 INFO  : Context for 'APU' is selected.
+13:55:05 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+13:55:05 INFO  : 'ps7_init' command is executed.
+13:55:05 INFO  : 'ps7_post_config' command is executed.
+13:55:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:55:05 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:55:05 INFO  : 'configparams force-mem-access 0' command is executed.
+13:55:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:55:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:55:05 INFO  : 'con' command is executed.
+13:55:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:55:05 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+13:56:05 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:56:21 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:56:43 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:56:51 INFO  : Disconnected from the channel tcfchan#62.
+13:56:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:56:52 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+13:56:52 INFO  : 'jtag frequency' command is executed.
+13:56:54 INFO  : Context for 'APU' is selected.
+13:56:54 INFO  : System reset is completed.
+13:56:57 INFO  : 'after 3000' command is executed.
+13:56:57 INFO  : Context for 'APU' is selected.
+13:56:57 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+13:56:57 INFO  : 'configparams force-mem-access 1' command is executed.
+13:56:57 INFO  : Context for 'APU' is selected.
+13:56:57 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+13:56:58 INFO  : 'ps7_init' command is executed.
+13:56:58 INFO  : 'ps7_post_config' command is executed.
+13:56:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:56:58 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:56:58 INFO  : 'configparams force-mem-access 0' command is executed.
+13:56:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:56:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:56:58 INFO  : 'con' command is executed.
+13:56:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:56:58 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+13:58:11 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+13:58:17 INFO  : Disconnected from the channel tcfchan#66.
+13:58:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:58:19 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+13:58:19 INFO  : 'jtag frequency' command is executed.
+13:58:19 INFO  : Context for 'APU' is selected.
+13:58:19 INFO  : System reset is completed.
+13:58:22 INFO  : 'after 3000' command is executed.
+13:58:22 INFO  : Context for 'APU' is selected.
+13:58:22 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+13:58:22 INFO  : 'configparams force-mem-access 1' command is executed.
+13:58:22 INFO  : Context for 'APU' is selected.
+13:58:22 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+13:58:22 INFO  : 'ps7_init' command is executed.
+13:58:22 INFO  : 'ps7_post_config' command is executed.
+13:58:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:22 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:58:22 INFO  : 'configparams force-mem-access 0' command is executed.
+13:58:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:58:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:58:22 INFO  : 'con' command is executed.
+13:58:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:58:22 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:05:11 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:05:21 INFO  : Disconnected from the channel tcfchan#68.
+14:05:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:05:22 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:05:22 INFO  : 'jtag frequency' command is executed.
+14:05:22 INFO  : Context for 'APU' is selected.
+14:05:22 INFO  : System reset is completed.
+14:05:25 INFO  : 'after 3000' command is executed.
+14:05:25 INFO  : Context for 'APU' is selected.
+14:05:25 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:05:25 INFO  : 'configparams force-mem-access 1' command is executed.
+14:05:25 INFO  : Context for 'APU' is selected.
+14:05:25 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:05:26 INFO  : 'ps7_init' command is executed.
+14:05:26 INFO  : 'ps7_post_config' command is executed.
+14:05:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:26 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:05:26 INFO  : 'configparams force-mem-access 0' command is executed.
+14:05:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:05:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:05:26 INFO  : 'con' command is executed.
+14:05:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:05:26 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:07:31 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:07:36 INFO  : Disconnected from the channel tcfchan#70.
+14:07:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:07:37 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:07:37 INFO  : 'jtag frequency' command is executed.
+14:07:39 INFO  : Context for 'APU' is selected.
+14:07:39 INFO  : System reset is completed.
+14:07:42 INFO  : 'after 3000' command is executed.
+14:07:42 INFO  : Context for 'APU' is selected.
+14:07:42 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:07:42 INFO  : 'configparams force-mem-access 1' command is executed.
+14:07:42 INFO  : Context for 'APU' is selected.
+14:07:42 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:07:43 INFO  : 'ps7_init' command is executed.
+14:07:43 INFO  : 'ps7_post_config' command is executed.
+14:07:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:43 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:07:43 INFO  : 'configparams force-mem-access 0' command is executed.
+14:07:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:07:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:07:43 INFO  : 'con' command is executed.
+14:07:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:07:43 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:14:27 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:14:33 INFO  : Disconnected from the channel tcfchan#72.
+14:14:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:14:34 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:14:34 INFO  : 'jtag frequency' command is executed.
+14:14:36 INFO  : Context for 'APU' is selected.
+14:14:36 INFO  : System reset is completed.
+14:14:39 INFO  : 'after 3000' command is executed.
+14:14:39 INFO  : Context for 'APU' is selected.
+14:14:39 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:14:39 INFO  : 'configparams force-mem-access 1' command is executed.
+14:14:39 INFO  : Context for 'APU' is selected.
+14:14:39 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:14:40 INFO  : 'ps7_init' command is executed.
+14:14:40 INFO  : 'ps7_post_config' command is executed.
+14:14:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:40 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:14:40 INFO  : 'configparams force-mem-access 0' command is executed.
+14:14:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:14:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:14:40 INFO  : 'con' command is executed.
+14:14:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:14:40 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:15:14 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:15:21 INFO  : Disconnected from the channel tcfchan#74.
+14:15:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:15:22 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:15:22 INFO  : 'jtag frequency' command is executed.
+14:15:24 INFO  : Context for 'APU' is selected.
+14:15:24 INFO  : System reset is completed.
+14:15:27 INFO  : 'after 3000' command is executed.
+14:15:27 INFO  : Context for 'APU' is selected.
+14:15:27 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:15:27 INFO  : 'configparams force-mem-access 1' command is executed.
+14:15:27 INFO  : Context for 'APU' is selected.
+14:15:27 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:15:27 INFO  : 'ps7_init' command is executed.
+14:15:27 INFO  : 'ps7_post_config' command is executed.
+14:15:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:15:27 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:15:28 INFO  : 'configparams force-mem-access 0' command is executed.
+14:15:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:15:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:15:28 INFO  : 'con' command is executed.
+14:15:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:15:28 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:16:37 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:16:49 INFO  : Disconnected from the channel tcfchan#76.
+14:16:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:16:50 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:16:50 INFO  : 'jtag frequency' command is executed.
+14:16:50 INFO  : Context for 'APU' is selected.
+14:16:50 INFO  : System reset is completed.
+14:16:53 INFO  : 'after 3000' command is executed.
+14:16:53 INFO  : Context for 'APU' is selected.
+14:16:53 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:16:53 INFO  : 'configparams force-mem-access 1' command is executed.
+14:16:53 INFO  : Context for 'APU' is selected.
+14:16:53 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:16:53 INFO  : 'ps7_init' command is executed.
+14:16:53 INFO  : 'ps7_post_config' command is executed.
+14:16:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:16:53 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:16:54 INFO  : 'configparams force-mem-access 0' command is executed.
+14:16:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:16:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:16:54 INFO  : 'con' command is executed.
+14:16:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:16:54 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:17:39 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:17:51 INFO  : Disconnected from the channel tcfchan#78.
+14:17:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:17:52 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:17:52 INFO  : 'jtag frequency' command is executed.
+14:17:52 INFO  : Context for 'APU' is selected.
+14:17:52 INFO  : System reset is completed.
+14:17:55 INFO  : 'after 3000' command is executed.
+14:17:55 INFO  : Context for 'APU' is selected.
+14:17:55 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:17:55 INFO  : 'configparams force-mem-access 1' command is executed.
+14:17:55 INFO  : Context for 'APU' is selected.
+14:17:55 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:17:55 INFO  : 'ps7_init' command is executed.
+14:17:55 INFO  : 'ps7_post_config' command is executed.
+14:17:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:55 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:17:55 INFO  : 'configparams force-mem-access 0' command is executed.
+14:17:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:17:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:17:56 INFO  : 'con' command is executed.
+14:17:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:17:56 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:18:20 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:18:30 INFO  : Disconnected from the channel tcfchan#80.
+14:18:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:18:32 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:18:32 INFO  : 'jtag frequency' command is executed.
+14:18:32 INFO  : Context for 'APU' is selected.
+14:18:32 INFO  : System reset is completed.
+14:18:35 INFO  : 'after 3000' command is executed.
+14:18:35 INFO  : Context for 'APU' is selected.
+14:18:35 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:18:35 INFO  : 'configparams force-mem-access 1' command is executed.
+14:18:35 INFO  : Context for 'APU' is selected.
+14:18:35 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:18:35 INFO  : 'ps7_init' command is executed.
+14:18:35 INFO  : 'ps7_post_config' command is executed.
+14:18:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:35 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:18:35 INFO  : 'configparams force-mem-access 0' command is executed.
+14:18:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:18:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:18:35 INFO  : 'con' command is executed.
+14:18:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:18:35 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:19:12 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:19:20 INFO  : Disconnected from the channel tcfchan#82.
+14:19:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:19:21 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:19:21 INFO  : 'jtag frequency' command is executed.
+14:19:21 INFO  : Context for 'APU' is selected.
+14:19:21 INFO  : System reset is completed.
+14:19:24 INFO  : 'after 3000' command is executed.
+14:19:24 INFO  : Context for 'APU' is selected.
+14:19:24 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:19:24 INFO  : 'configparams force-mem-access 1' command is executed.
+14:19:24 INFO  : Context for 'APU' is selected.
+14:19:24 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:19:25 INFO  : 'ps7_init' command is executed.
+14:19:25 INFO  : 'ps7_post_config' command is executed.
+14:19:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:19:25 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:19:25 INFO  : 'configparams force-mem-access 0' command is executed.
+14:19:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:19:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:19:25 INFO  : 'con' command is executed.
+14:19:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:19:25 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+14:19:50 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+14:20:01 INFO  : Disconnected from the channel tcfchan#84.
+14:20:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:20:02 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+14:20:02 INFO  : 'jtag frequency' command is executed.
+14:20:02 INFO  : Context for 'APU' is selected.
+14:20:02 INFO  : System reset is completed.
+14:20:05 INFO  : 'after 3000' command is executed.
+14:20:05 INFO  : Context for 'APU' is selected.
+14:20:05 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+14:20:05 INFO  : 'configparams force-mem-access 1' command is executed.
+14:20:05 INFO  : Context for 'APU' is selected.
+14:20:05 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+14:20:05 INFO  : 'ps7_init' command is executed.
+14:20:05 INFO  : 'ps7_post_config' command is executed.
+14:20:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:20:06 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:20:06 INFO  : 'configparams force-mem-access 0' command is executed.
+14:20:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:20:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:20:06 INFO  : 'con' command is executed.
+14:20:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:20:06 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+15:50:24 INFO  : Disconnected from the channel tcfchan#86.
+15:50:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:50:25 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+15:50:25 INFO  : 'jtag frequency' command is executed.
+15:50:25 INFO  : Context for 'APU' is selected.
+15:50:25 INFO  : System reset is completed.
+15:50:28 INFO  : 'after 3000' command is executed.
+15:50:28 INFO  : Context for 'APU' is selected.
+15:50:28 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+15:50:28 INFO  : 'configparams force-mem-access 1' command is executed.
+15:50:28 INFO  : Context for 'APU' is selected.
+15:50:28 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+15:50:29 INFO  : 'ps7_init' command is executed.
+15:50:29 INFO  : 'ps7_post_config' command is executed.
+15:50:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:50:29 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:50:29 INFO  : 'configparams force-mem-access 0' command is executed.
+15:50:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:50:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:50:29 INFO  : 'con' command is executed.
+15:50:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:50:29 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:14:41 INFO  : Result from executing command 'getProjects': zed
+16:14:41 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+16:14:42 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:14:51 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:15:08 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:15:27 INFO  : Disconnected from the channel tcfchan#87.
+16:15:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:15:28 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:15:28 INFO  : 'jtag frequency' command is executed.
+16:15:29 INFO  : Context for 'APU' is selected.
+16:15:29 INFO  : System reset is completed.
+16:15:32 INFO  : 'after 3000' command is executed.
+16:15:32 INFO  : Context for 'APU' is selected.
+16:15:32 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:15:32 INFO  : 'configparams force-mem-access 1' command is executed.
+16:15:32 INFO  : Context for 'APU' is selected.
+16:15:32 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:15:32 INFO  : 'ps7_init' command is executed.
+16:15:32 INFO  : 'ps7_post_config' command is executed.
+16:15:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:15:33 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:15:33 INFO  : 'configparams force-mem-access 0' command is executed.
+16:15:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:15:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:15:33 INFO  : 'con' command is executed.
+16:15:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:15:33 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:16:55 INFO  : Result from executing command 'getProjects': zed
+16:16:55 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+16:16:56 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:17:07 INFO  : Disconnected from the channel tcfchan#92.
+16:17:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:17:09 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:17:09 INFO  : 'jtag frequency' command is executed.
+16:17:09 INFO  : Context for 'APU' is selected.
+16:17:09 INFO  : System reset is completed.
+16:17:12 INFO  : 'after 3000' command is executed.
+16:17:12 INFO  : Context for 'APU' is selected.
+16:17:12 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:17:12 INFO  : 'configparams force-mem-access 1' command is executed.
+16:17:12 INFO  : Context for 'APU' is selected.
+16:17:12 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:17:12 INFO  : 'ps7_init' command is executed.
+16:17:12 INFO  : 'ps7_post_config' command is executed.
+16:17:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:12 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:17:12 INFO  : 'configparams force-mem-access 0' command is executed.
+16:17:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:17:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:17:12 INFO  : 'con' command is executed.
+16:17:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:17:12 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:18:37 INFO  : Result from executing command 'getProjects': zed
+16:18:37 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+16:18:38 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:18:55 INFO  : Disconnected from the channel tcfchan#95.
+16:18:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:18:57 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:18:57 INFO  : 'jtag frequency' command is executed.
+16:18:59 INFO  : Context for 'APU' is selected.
+16:18:59 INFO  : System reset is completed.
+16:19:02 INFO  : 'after 3000' command is executed.
+16:19:02 INFO  : Context for 'APU' is selected.
+16:19:02 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:19:02 INFO  : 'configparams force-mem-access 1' command is executed.
+16:19:02 INFO  : Context for 'APU' is selected.
+16:19:02 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:19:02 INFO  : 'ps7_init' command is executed.
+16:19:02 INFO  : 'ps7_post_config' command is executed.
+16:19:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:02 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:19:02 INFO  : 'configparams force-mem-access 0' command is executed.
+16:19:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:19:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:19:02 INFO  : 'con' command is executed.
+16:19:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:19:02 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:20:02 INFO  : Result from executing command 'getProjects': zed
+16:20:02 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+16:20:03 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:20:10 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:20:22 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:30:08 INFO  : Disconnected from the channel tcfchan#98.
+16:30:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:30:09 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:30:09 INFO  : 'jtag frequency' command is executed.
+16:30:10 INFO  : Context for 'APU' is selected.
+16:30:10 INFO  : System reset is completed.
+16:30:13 INFO  : 'after 3000' command is executed.
+16:30:13 INFO  : Context for 'APU' is selected.
+16:30:13 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:30:13 INFO  : 'configparams force-mem-access 1' command is executed.
+16:30:13 INFO  : Context for 'APU' is selected.
+16:30:13 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:30:13 INFO  : 'ps7_init' command is executed.
+16:30:13 INFO  : 'ps7_post_config' command is executed.
+16:30:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:13 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:30:13 INFO  : 'configparams force-mem-access 0' command is executed.
+16:30:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:30:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:30:13 INFO  : 'con' command is executed.
+16:30:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:30:13 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:31:07 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:31:17 INFO  : Disconnected from the channel tcfchan#103.
+16:31:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:18 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:31:18 ERROR : port closed
+16:31:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:31:18 ERROR : port closed
+16:31:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:26 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:31:26 INFO  : 'jtag frequency' command is executed.
+16:31:26 INFO  : Context for 'APU' is selected.
+16:31:26 INFO  : System reset is completed.
+16:31:29 INFO  : 'after 3000' command is executed.
+16:31:29 INFO  : Context for 'APU' is selected.
+16:31:29 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:31:29 INFO  : 'configparams force-mem-access 1' command is executed.
+16:31:29 INFO  : Context for 'APU' is selected.
+16:31:29 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:31:29 INFO  : 'ps7_init' command is executed.
+16:31:29 INFO  : 'ps7_post_config' command is executed.
+16:31:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:29 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:31:29 INFO  : 'configparams force-mem-access 0' command is executed.
+16:31:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:31:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:31:30 INFO  : 'con' command is executed.
+16:31:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:31:30 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:49:48 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:50:18 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:50:24 INFO  : Disconnected from the channel tcfchan#105.
+16:50:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:50:25 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:50:25 INFO  : 'jtag frequency' command is executed.
+16:50:25 INFO  : Context for 'APU' is selected.
+16:50:25 INFO  : System reset is completed.
+16:50:28 INFO  : 'after 3000' command is executed.
+16:50:28 INFO  : Context for 'APU' is selected.
+16:50:28 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:50:28 INFO  : 'configparams force-mem-access 1' command is executed.
+16:50:28 INFO  : Context for 'APU' is selected.
+16:50:28 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:50:28 INFO  : 'ps7_init' command is executed.
+16:50:28 INFO  : 'ps7_post_config' command is executed.
+16:50:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:29 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:50:29 INFO  : 'configparams force-mem-access 0' command is executed.
+16:50:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:50:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:50:29 INFO  : 'con' command is executed.
+16:50:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:50:29 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:51:40 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:51:50 INFO  : Result from executing command 'removePlatformRepo': 
+16:52:09 INFO  : Result from executing command 'getProjects': zed
+16:52:09 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+16:52:10 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:52:25 INFO  : Disconnected from the channel tcfchan#108.
+16:52:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:26 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:52:26 INFO  : 'jtag frequency' command is executed.
+16:52:26 INFO  : Context for 'APU' is selected.
+16:52:26 INFO  : System reset is completed.
+16:52:29 INFO  : 'after 3000' command is executed.
+16:52:29 INFO  : Context for 'APU' is selected.
+16:52:29 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:52:29 INFO  : 'configparams force-mem-access 1' command is executed.
+16:52:29 INFO  : Context for 'APU' is selected.
+16:52:29 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:52:29 INFO  : 'ps7_init' command is executed.
+16:52:29 INFO  : 'ps7_post_config' command is executed.
+16:52:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:29 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:52:29 INFO  : 'configparams force-mem-access 0' command is executed.
+16:52:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:52:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:30 INFO  : 'con' command is executed.
+16:52:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:52:30 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:54:02 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:54:12 INFO  : Disconnected from the channel tcfchan#113.
+16:54:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:54:13 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:54:13 INFO  : 'jtag frequency' command is executed.
+16:54:14 INFO  : Context for 'APU' is selected.
+16:54:14 INFO  : System reset is completed.
+16:54:17 INFO  : 'after 3000' command is executed.
+16:54:17 INFO  : Context for 'APU' is selected.
+16:54:17 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:54:17 INFO  : 'configparams force-mem-access 1' command is executed.
+16:54:17 INFO  : Context for 'APU' is selected.
+16:54:17 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:54:17 INFO  : 'ps7_init' command is executed.
+16:54:17 INFO  : 'ps7_post_config' command is executed.
+16:54:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:17 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:54:17 INFO  : 'configparams force-mem-access 0' command is executed.
+16:54:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:54:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:54:18 INFO  : 'con' command is executed.
+16:54:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:54:18 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+16:55:02 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+16:55:17 INFO  : Disconnected from the channel tcfchan#115.
+16:55:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:18 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+16:55:18 INFO  : 'jtag frequency' command is executed.
+16:55:18 INFO  : Context for 'APU' is selected.
+16:55:18 INFO  : System reset is completed.
+16:55:21 INFO  : 'after 3000' command is executed.
+16:55:21 INFO  : Context for 'APU' is selected.
+16:55:21 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+16:55:21 INFO  : 'configparams force-mem-access 1' command is executed.
+16:55:21 INFO  : Context for 'APU' is selected.
+16:55:21 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+16:55:21 INFO  : 'ps7_init' command is executed.
+16:55:21 INFO  : 'ps7_post_config' command is executed.
+16:55:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:21 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:55:21 INFO  : 'configparams force-mem-access 0' command is executed.
+16:55:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:55:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:21 INFO  : 'con' command is executed.
+16:55:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:55:21 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+17:12:23 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+17:12:35 INFO  : Disconnected from the channel tcfchan#117.
+17:12:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:12:36 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+17:12:36 ERROR : port closed
+17:12:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:12:36 ERROR : port closed
+17:12:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:12:40 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+17:12:40 INFO  : 'jtag frequency' command is executed.
+17:12:40 INFO  : Context for 'APU' is selected.
+17:12:40 INFO  : System reset is completed.
+17:12:43 INFO  : 'after 3000' command is executed.
+17:12:43 INFO  : Context for 'APU' is selected.
+17:12:43 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+17:12:43 INFO  : 'configparams force-mem-access 1' command is executed.
+17:12:43 INFO  : Context for 'APU' is selected.
+17:12:43 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+17:12:43 INFO  : 'ps7_init' command is executed.
+17:12:43 INFO  : 'ps7_post_config' command is executed.
+17:12:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:12:43 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:12:44 INFO  : 'configparams force-mem-access 0' command is executed.
+17:12:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:12:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:12:44 INFO  : 'con' command is executed.
+17:12:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:12:44 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+17:13:27 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+17:13:46 INFO  : Disconnected from the channel tcfchan#119.
+17:13:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:13:47 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+17:13:47 INFO  : 'jtag frequency' command is executed.
+17:13:47 INFO  : Context for 'APU' is selected.
+17:13:48 INFO  : System reset is completed.
+17:13:51 INFO  : 'after 3000' command is executed.
+17:13:51 INFO  : Context for 'APU' is selected.
+17:13:51 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+17:13:51 INFO  : 'configparams force-mem-access 1' command is executed.
+17:13:51 INFO  : Context for 'APU' is selected.
+17:13:51 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+17:13:51 INFO  : 'ps7_init' command is executed.
+17:13:51 INFO  : 'ps7_post_config' command is executed.
+17:13:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:13:51 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:13:51 INFO  : 'configparams force-mem-access 0' command is executed.
+17:13:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:13:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:13:51 INFO  : 'con' command is executed.
+17:13:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:13:51 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+17:21:07 INFO  : Result from executing command 'removePlatformRepo': 
+18:14:46 INFO  : Result from executing command 'getProjects': zed
+18:14:46 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+18:14:47 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:14:55 INFO  : Disconnected from the channel tcfchan#121.
+18:14:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:14:56 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+18:14:56 INFO  : 'jtag frequency' command is executed.
+18:14:56 INFO  : Context for 'APU' is selected.
+18:14:56 INFO  : System reset is completed.
+18:14:59 INFO  : 'after 3000' command is executed.
+18:14:59 INFO  : Context for 'APU' is selected.
+18:14:59 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+18:14:59 INFO  : 'configparams force-mem-access 1' command is executed.
+18:14:59 INFO  : Context for 'APU' is selected.
+18:14:59 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+18:14:59 INFO  : 'ps7_init' command is executed.
+18:14:59 INFO  : 'ps7_post_config' command is executed.
+18:14:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:15:00 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:15:00 INFO  : 'configparams force-mem-access 0' command is executed.
+18:15:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:15:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:15:00 INFO  : 'con' command is executed.
+18:15:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:15:00 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+18:16:02 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:16:14 INFO  : Disconnected from the channel tcfchan#125.
+18:16:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:16:15 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+18:16:15 INFO  : 'jtag frequency' command is executed.
+18:16:15 INFO  : Context for 'APU' is selected.
+18:16:15 INFO  : System reset is completed.
+18:16:18 INFO  : 'after 3000' command is executed.
+18:16:18 INFO  : Context for 'APU' is selected.
+18:16:18 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+18:16:18 INFO  : 'configparams force-mem-access 1' command is executed.
+18:16:18 INFO  : Context for 'APU' is selected.
+18:16:18 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+18:16:18 INFO  : 'ps7_init' command is executed.
+18:16:18 INFO  : 'ps7_post_config' command is executed.
+18:16:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:16:19 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:16:19 INFO  : 'configparams force-mem-access 0' command is executed.
+18:16:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:16:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:16:19 INFO  : 'con' command is executed.
+18:16:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:16:19 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+18:17:24 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:17:43 INFO  : Disconnected from the channel tcfchan#127.
+18:17:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:44 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+18:17:44 ERROR : port closed
+18:17:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:17:44 ERROR : port closed
+18:17:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:54 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+18:17:54 INFO  : 'jtag frequency' command is executed.
+18:17:54 INFO  : Context for 'APU' is selected.
+18:17:54 INFO  : System reset is completed.
+18:17:57 INFO  : 'after 3000' command is executed.
+18:17:57 INFO  : Context for 'APU' is selected.
+18:17:57 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+18:17:57 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:57 INFO  : Context for 'APU' is selected.
+18:17:57 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+18:17:57 INFO  : 'ps7_init' command is executed.
+18:17:57 INFO  : 'ps7_post_config' command is executed.
+18:17:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:58 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:17:58 INFO  : 'configparams force-mem-access 0' command is executed.
+18:17:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:17:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:58 INFO  : 'con' command is executed.
+18:17:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:17:58 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+18:18:57 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:19:06 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:19:15 INFO  : Disconnected from the channel tcfchan#129.
+18:19:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:19:16 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+18:19:16 INFO  : 'jtag frequency' command is executed.
+18:19:18 INFO  : Context for 'APU' is selected.
+18:19:18 INFO  : System reset is completed.
+18:19:21 INFO  : 'after 3000' command is executed.
+18:19:21 INFO  : Context for 'APU' is selected.
+18:19:21 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+18:19:21 INFO  : 'configparams force-mem-access 1' command is executed.
+18:19:21 INFO  : Context for 'APU' is selected.
+18:19:21 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+18:19:22 INFO  : 'ps7_init' command is executed.
+18:19:22 INFO  : 'ps7_post_config' command is executed.
+18:19:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:22 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:19:22 INFO  : 'configparams force-mem-access 0' command is executed.
+18:19:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:19:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:19:22 INFO  : 'con' command is executed.
+18:19:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:19:22 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+18:25:56 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:26:03 INFO  : Disconnected from the channel tcfchan#132.
+18:26:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:26:04 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+18:26:04 INFO  : 'jtag frequency' command is executed.
+18:26:06 INFO  : Context for 'APU' is selected.
+18:26:06 INFO  : System reset is completed.
+18:26:09 INFO  : 'after 3000' command is executed.
+18:26:09 INFO  : Context for 'APU' is selected.
+18:26:09 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+18:26:09 INFO  : 'configparams force-mem-access 1' command is executed.
+18:26:09 INFO  : Context for 'APU' is selected.
+18:26:09 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+18:26:09 INFO  : 'ps7_init' command is executed.
+18:26:09 INFO  : 'ps7_post_config' command is executed.
+18:26:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:26:10 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:26:10 INFO  : 'configparams force-mem-access 0' command is executed.
+18:26:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:26:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:26:10 INFO  : 'con' command is executed.
+18:26:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:26:10 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+18:42:06 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:42:19 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:42:32 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:46:15 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:46:22 INFO  : Checking for BSP changes to sync application flags for project 'testApp'...
+18:46:40 INFO  : Disconnected from the channel tcfchan#134.
+18:46:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:46:41 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+18:46:41 INFO  : 'jtag frequency' command is executed.
+18:46:43 INFO  : Context for 'APU' is selected.
+18:46:43 INFO  : System reset is completed.
+18:46:46 INFO  : 'after 3000' command is executed.
+18:46:46 INFO  : Context for 'APU' is selected.
+18:46:46 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+18:46:46 INFO  : 'configparams force-mem-access 1' command is executed.
+18:46:46 INFO  : Context for 'APU' is selected.
+18:46:46 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+18:46:46 INFO  : 'ps7_init' command is executed.
+18:46:46 INFO  : 'ps7_post_config' command is executed.
+18:46:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:46:46 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:46:46 INFO  : 'configparams force-mem-access 0' command is executed.
+18:46:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:46:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:46:46 INFO  : 'con' command is executed.
+18:46:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:46:46 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+18:47:01 INFO  : Disconnected from the channel tcfchan#140.
+18:47:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:02 INFO  : Jtag cable 'Digilent Zed 210248B77F06' is selected.
+18:47:02 INFO  : 'jtag frequency' command is executed.
+18:47:04 INFO  : Context for 'APU' is selected.
+18:47:04 INFO  : System reset is completed.
+18:47:07 INFO  : 'after 3000' command is executed.
+18:47:07 INFO  : Context for 'APU' is selected.
+18:47:07 INFO  : Hardware design and registers information is loaded from 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa'.
+18:47:07 INFO  : 'configparams force-mem-access 1' command is executed.
+18:47:07 INFO  : Context for 'APU' is selected.
+18:47:07 INFO  : Sourcing of 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl' is done.
+18:47:07 INFO  : 'ps7_init' command is executed.
+18:47:07 INFO  : 'ps7_post_config' command is executed.
+18:47:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:07 INFO  : The application 'E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:47:07 INFO  : 'configparams force-mem-access 0' command is executed.
+18:47:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/hw/zed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp/Debug/testApp.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:47:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:07 INFO  : 'con' command is executed.
+18:47:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:47:07 INFO  : Launch script is exported to file 'E:\00.work\03.Zynq\00.work\00.zedboard\TestLoopTimer\testApp_system\_ide\scripts\debugger_testapp-default.tcl'
+19:06:06 INFO  : Disconnected from the channel tcfchan#141.

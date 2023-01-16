@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="testApp" location="E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/testApp" platform="E:/00.work/03.Zynq/00.work/00.zedboard/TestLoopTimer/zed/export/zed/zed.xpfm" platformUID="xilinx:zedboard::0.0(custom)" systemProject="testApp_system" sysConfig="zed" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="2577ef0a68fc2db964e16e39f5959563">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1949546809">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1979600101" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="lwip_echo_server" hasBspSettings="true"/>
+</sdkproject:SdkProject>
